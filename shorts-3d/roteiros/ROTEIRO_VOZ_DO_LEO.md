@@ -46,12 +46,12 @@ Luz quente de fim de tarde. No momento "noite escura e tempestuosa" a luz vira a
 | 9 | Leo | Ficou melhor que a minha! | Luz volta ao quente. Leo rindo, batendo palma. | — |
 | 10 | Narrador | Com isso, o Leo abriu canal de histórias em três lugares. ✱ | Três telas flutuantes aparecem em volta do quarto com ícones genéricos (play, nota musical, câmera; sem logos de plataformas). | **3** telas na palavra "três" |
 | 11 | Eco | Só uma regra: clone só a sua voz, ou de quem deixou. | Eco balança a antena como um dedo de "não-não". | Placa **SÓ COM PERMISSÃO** na palavra "deixou" |
-| 12 | Leo | O jeito que eu fiz esse vídeo tá no link da bio! | Close final do Leo apontando para cima; a câmera sobe e abre o quarto, ele pisca. | placa **LINK NA BIO** na palavra "link" |
+| 12 | Leo | Comenta Voice Studio que eu te mando o projeto! | Close final do Leo apontando para cima; a câmera sobe e abre o quarto, ele pisca. | placas **COMENTA** + **VOICESTUDIO** nas palavras "Comenta" e "Voice" |
 
 ✱ = afirmação de fato. Confira se você concorda em dizer isso no seu canal. Pelo que eu sei, são verdadeiras de forma genérica: existem vozes neurais gratuitas (este próprio short usa vozes neurais grátis), existem modelos de voz de código aberto que rodam no computador e clonam voz a partir de uma amostra, e alguns geram voz a partir de uma descrição em texto. O único produto citado é o VoiceStudio (conferido no GitHub em 07/11/2026).
 
 ### CTA
-"O jeito que eu fiz esse vídeo tá no link da bio!", apontando para o repositório `ViralVideo`, que tem o pipeline deste short.
+"Comenta Voice Studio que eu te mando o projeto!" (escolhido por você; você responde os comentários com o link do projeto).
 
 **Duração estimada:** 36 a 42 s.
 

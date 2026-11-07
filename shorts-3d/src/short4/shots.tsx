@@ -54,7 +54,7 @@ const leoFace = (f: number): FaceState => {
     [LS(6) - 3, "focused"], [LS(7) - 3, "excited"],
     [LS(8) - 2, "worried"], [LS(9) - 3, "joy"],
     [LS(10) - 3, "happy"], [LS(11) - 3, "smile"],
-    [LS(12) - 3, "excited"], [W(12, 11) + 8, "wink"],
+    [LS(12) - 3, "excited"], [W(12, 8) + 8, "wink"],
   ]);
   return { expr: ex.expr, blink: Math.max(ex.blink, blinkAt(f, 1, 62)), mouthOpen: mouthFor(["leo"], f), sweat: between(f, LS(2), LS(3)) };
 };
@@ -76,7 +76,7 @@ const leoPose = (f: number): { pose: Pose; mic: boolean } => {
     return { pose: { ...idle, armL: [-1.1, 0, 0.35 + c * 0.45], armR: [-1.1, 0, -0.35 - c * 0.45], head: [0.1, 0.2, 0], bob: c * 0.03 }, mic: false };
   }
   if (f < LS(12)) return { pose: { ...idle, head: [-0.15, 0.1, 0] }, mic: false };
-  const up = pop(f, W(12, 9) - 8, 6);
+  const up = pop(f, W(12, 1) - 8, 6);
   return { pose: { ...idle, armR: [-2.7 * up, 0, 0.15], head: [0, -0.15, 0] }, mic: false };
 };
 
@@ -167,8 +167,10 @@ const props = (f: number) => {
   if (between(f, W(11, 11) - 3, LS(12) - 1))
     items.push(<Sign key="perm" text="SÓ COM PERMISSÃO" p={[ECO[0], TOP_Y + 0.85, ECO[2] + 0.1]} rot={[0, -0.2, 0]} w={0.85} h={0.22} bg="#ffffff" fg="#2f9e6a" border="#2f9e6a" pop={pop(f, W(11, 11) - 2, 6)} />);
   // CTA
-  if (f >= W(12, 9) - 3)
-    items.push(<Sign key="cta" text="LINK NA BIO" p={[0.05, 1.95, 0.2]} w={1.1} h={0.34} bg="#ffd23f" fg="#2a1a10" border="#2a1a10" pop={pop(f, W(12, 9) - 2, 7)} />);
+  if (f >= W(12, 0) - 3) {
+    items.push(<Sign key="cta1" text="COMENTA" p={[0.05, 2.12, 0.2]} w={0.62} h={0.2} bg="#ffffff" fg="#2a1a10" border="#2a1a10" pop={pop(f, W(12, 0) - 2, 6)} />);
+    items.push(<Sign key="cta2" text="VOICESTUDIO" p={[0.05, 1.86, 0.22]} w={1.15} h={0.3} bg="#ffd23f" fg="#7a3b8f" border="#2a1a10" pop={pop(f, W(12, 1) - 2, 7)} />);
+  }
   // relâmpago na janela
   const fl = flashAt(f);
   if (fl > 0) items.push(<Bolt key="bolt" p={[-0.6, 2.05, -2.4]} s={1.1} on={fl} />);
@@ -241,8 +243,8 @@ export const SHOTS: Shot[] = [
   { name: "11a Eco nao-nao", from: 32.57, to: 33.77, render: (f, s, e) => room(f, glide(f, s, e, C([1.06, 1.11, 1.27], [0.62, 1.05, 0.32], 38), C([0.83, 1.05, 1.16], [0.62, 1.05, 0.32], 38))) },
   { name: "11b Eco sua voz", from: 33.77, to: 34.97, render: (f, s, e) => room(f, glide(f, s, e, C([0.38, 1.02, 1.2], ECO_H, 34), C([0.52, 1.02, 1.06], ECO_H, 34))) },
   { name: "11c so com permissao", from: 34.97, to: 35.92, render: (f, s, e) => room(f, glide(f, s, e, C([0.62, 1.3, 1.55], [0.62, 1.2, 0.32], 42), C([0.5, 1.25, 1.35], [0.62, 1.2, 0.32], 42))) },
-  // 12. "O jeito que eu fiz esse vídeo tá no link da bio!"
-  { name: "12a Leo CTA", from: 35.92, to: 37.17, render: (f, s, e) => room(f, glide(f, s, e, C([0.04, 1.3, 1.85], [-0.15, 1.05, 0.1], 42), C([-0.21, 1.24, 1.6], [-0.15, 1.05, 0.1], 42))) },
-  { name: "12b link na bio", from: 37.17, to: 38.37, render: (f, s, e) => room(f, glide(f, s, e, C([0, 1.35, 2.4], [0, 1.35, 0.1], 46), C([0.15, 1.45, 2.6], [0, 1.4, 0.1], 46))) },
-  { name: "12c final sobe", from: 38.37, to: 41, render: (f, s, e) => room(f, glide(f, s, e, C([0.15, 1.45, 2.6], [0, 1.4, 0.1], 46), C([-0.2, 2.0, 3.3], [0, 1.3, 0.1], 46))) },
+  // 12. "Comenta Voice Studio que eu te mando o projeto!"
+  { name: "12a Leo CTA", from: 35.92, to: 36.3, render: (f, s, e) => room(f, glide(f, s, e, C([0.04, 1.3, 1.85], [-0.15, 1.05, 0.1], 42), C([-0.21, 1.24, 1.6], [-0.15, 1.05, 0.1], 42))) },
+  { name: "12b comenta voicestudio", from: 36.3, to: 37.6, render: (f, s, e) => room(f, glide(f, s, e, C([0, 1.35, 2.4], [0, 1.35, 0.1], 46), C([0.15, 1.45, 2.6], [0, 1.4, 0.1], 46))) },
+  { name: "12c final sobe", from: 37.6, to: 41, render: (f, s, e) => room(f, glide(f, s, e, C([0.15, 1.45, 2.6], [0, 1.4, 0.1], 46), C([-0.2, 2.0, 3.3], [0, 1.3, 0.1], 46))) },
 ];

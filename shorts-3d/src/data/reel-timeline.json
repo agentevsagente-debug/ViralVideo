@@ -686,71 +686,56 @@
   {
    "id": 12,
    "who": "leo",
-   "text": "O jeito que eu fiz esse vídeo tá no link da bio!",
+   "text": "Comenta Voice Studio que eu te mando o projeto!",
    "audio": "audio/reel/l12.mp3",
-   "audioStart": 35.901,
+   "audioStart": 35.903,
    "fileDur": 2.568,
    "start": 35.947,
    "end": 38.157,
    "words": [
     {
-     "text": "O",
+     "text": "Comenta",
      "start": 35.947,
-     "end": 36.025
+     "end": 36.383
     },
     {
-     "text": "jeito",
-     "start": 36.025,
-     "end": 36.371
+     "text": "Voice",
+     "start": 36.383,
+     "end": 36.74
+    },
+    {
+     "text": "Studio",
+     "start": 36.74,
+     "end": 37.186
     },
     {
      "text": "que",
-     "start": 36.371,
-     "end": 36.416
+     "start": 37.186,
+     "end": 37.264
     },
     {
      "text": "eu",
-     "start": 36.416,
-     "end": 36.483
+     "start": 37.264,
+     "end": 37.331
     },
     {
-     "text": "fiz",
-     "start": 36.483,
-     "end": 36.673
+     "text": "te",
+     "start": 37.331,
+     "end": 37.443
     },
     {
-     "text": "esse",
-     "start": 36.673,
-     "end": 36.918
+     "text": "mando",
+     "start": 37.443,
+     "end": 37.666
     },
     {
-     "text": "vídeo",
-     "start": 36.918,
-     "end": 37.275
+     "text": "o",
+     "start": 37.666,
+     "end": 37.677
     },
     {
-     "text": "tá",
-     "start": 37.275,
-     "end": 37.387
-    },
-    {
-     "text": "no",
-     "start": 37.387,
-     "end": 37.476
-    },
-    {
-     "text": "link",
-     "start": 37.476,
-     "end": 37.789
-    },
-    {
-     "text": "da",
-     "start": 37.789,
-     "end": 37.889
-    },
-    {
-     "text": "bio",
-     "start": 37.889,
+     "text": "projeto",
+     "start": 37.677,
      "end": 38.157
     }
    ]
