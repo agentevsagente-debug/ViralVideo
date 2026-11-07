@@ -1,10 +1,21 @@
-# 🦫 E se capivaras voassem?
+# 🚀 ViralVideo
+
+Material dos vídeos do Instagram/YouTube: prompts e projetos para criar vídeos virais com IA.
+
+| Pasta | O que é |
+|---|---|
+| [`prompts/`](prompts/) | **E se capivaras voassem?** 10 estilos de animação, um prompt só (cole no Claude ou no ChatGPT, sai um HTML) ↓ |
+| [`shorts-3d/`](shorts-3d/) | **Shorts 3D cartoon feitos em código**: Remotion + Three.js + vozes grátis, e um [prompt para o Claude Code](shorts-3d/PROMPT_VIRAL_3D.md) criar um short novo a partir de qualquer história |
+
+---
+
+## 🦫 E se capivaras voassem?
 
 **Uma animação, 10 estilos, um prompt só.**
 
 Você veio do Instagram? Aqui estão os prompts do vídeo. Cole no **Claude** ou no **ChatGPT** e ele devolve um arquivo HTML que roda direto no navegador, com a capivara voando sobre o Rio no estilo que você escolher. Sem programar, sem instalar nada.
 
-## Como usar
+### Como usar
 
 1. **Copie** o prompt do estilo que você quer (tabela abaixo).
 2. **Cole** no Claude ou no ChatGPT.
@@ -12,7 +23,7 @@ Você veio do Instagram? Aqui estão os prompts do vídeo. Cole no **Claude** ou
 
 > Quer postar? Grave a tela no formato vertical 9:16 enquanto a animação roda.
 
-## Os 10 estilos
+### Os 10 estilos
 
 | # | Estilo | Prompt |
 |---|--------|--------|
@@ -27,7 +38,7 @@ Você veio do Instagram? Aqui estão os prompts do vídeo. Cole no **Claude** ou
 | 9 | Estilo PS2 | [09-ps2.md](prompts/09-ps2.md) |
 | 10 | Nanquim sumi-e | [10-nanquim-sumie.md](prompts/10-nanquim-sumie.md) |
 
-## Crie o seu estilo
+### Crie o seu estilo
 
 Todos os prompts saem do mesmo molde: o [prompt base](prompts/00-prompt-base.md). Troque `{estilo}` por qualquer coisa (aquarela, vitral, anime, origami…) e veja a mesma capivara ganhar um visual novo.
 
