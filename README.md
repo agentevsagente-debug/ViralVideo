@@ -5,6 +5,7 @@ Material dos vídeos do Instagram/YouTube: prompts e projetos para criar vídeos
 | Pasta | O que é |
 |---|---|
 | [`prompts/`](prompts/) | **E se capivaras voassem?** 10 estilos de animação, um prompt só (cole no Claude ou no ChatGPT, sai um HTML) ↓ |
+| [`prompts/resumo-conversa.md`](prompts/resumo-conversa.md) | **Prompt RESUMO**: a IA esqueceu o começo da conversa? Gere um resumo e continue numa conversa nova sem perder nada |
 | [`shorts-3d/`](shorts-3d/) | **Shorts 3D cartoon feitos em código**: Remotion + Three.js + vozes grátis, e um [prompt para o Claude Code](shorts-3d/PROMPT_VIRAL_3D.md) criar um short novo a partir de qualquer história |
 
 ---
