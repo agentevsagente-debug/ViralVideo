@@ -83,8 +83,8 @@ Dica: escreva a premissa como **ação** ("a padaria abre e serve os primeiros c
 
 A maquete do Diorama roda no navegador e é uma função do tempo `t`, então dá para gravar qualquer quadro.
 Se quiser transformar em short (1080x1920, 30 fps) com narração e legenda, use o pipeline desta pasta:
-- [`PROMPT_VIRAL_3D.md`](PROMPT_VIRAL_3D.md): o prompt para montar o short inteiro (roteiro, vozes neurais grátis em PT-BR, legenda palavra por palavra e render).
-- [`README.md`](README.md): como instalar e renderizar.
+- [`PROMPT_VIRAL_3D.md`](../../PROMPT_VIRAL_3D.md): o prompt para montar o short inteiro (roteiro, vozes neurais grátis em PT-BR, legenda palavra por palavra e render).
+- [`README.md`](../../README.md): como instalar e renderizar.
 
 ---
 
