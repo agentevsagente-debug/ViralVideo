@@ -129,5 +129,4 @@ Quando terminar, me diga: caminho do MP4, duração, a folha de contato e o que 
 - **Texto que quebra linha** é o defeito número 1 de motion graphics em HTML: use `white-space: nowrap` e `width: max-content`.
 - **Render rápido na sua máquina:** nas configurações de gráficos do Windows (Sistema › Tela › Gráficos), adicione o navegador que o Remotion usa, `node_modules\.remotion\chrome-headless-shell\win64\chrome-headless-shell-win64\chrome-headless-shell.exe` (ele aparece depois do primeiro render), e escolha **Alto desempenho** (a placa de vídeo dedicada). Renderize com `--gl=angle`.
 
-**Créditos:** o método (treinar o Claude num estilo com um livro de regras em números, fórmula de roteiro dos virais, 5 áreas com agente juiz, render local na GPU) foi aprendido no vídeo [Como Fazer Shorts Animados Virais com IA Usando o Claude](https://www.youtube.com/watch?v=hdnlpJZhvXs) (Matheus Celtic). A implementação, os personagens, o roteiro e o kit de motion graphics daqui são nossos.
 **Fonte da história:** Lucas 15:11-32. **Vozes:** Edge TTS (serviço da Microsoft); confira os termos antes de monetizar.
